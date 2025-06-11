@@ -48,7 +48,7 @@
 }
 
 .header__theme-menu-button:hover {
-   border: 1px solid var(--button-active-color);
+  border: 1px solid var(--button-active-color);
 }
 
 .header__theme-menu-button:focus {
@@ -253,6 +253,7 @@
   }
   .heading {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    justify-self: start;
   }
 
   .decorated-zone::before {
@@ -271,10 +272,6 @@
   .rec__icon::after {
     top: 28px;
     right: 29px;
-  }
-
-  .heading {
-    justify-self: start;
   }
 
   .header__title {
@@ -366,8 +363,5 @@
   .text__concentracion {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  .header__title {
-    padding-left: 513px;
   }
 }

@@ -16,7 +16,7 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
-:root.theme-dark{
+:root.theme-dark {
   --title-color: #DB00FF;
   --accent-color: #FF0070;
   --subtitle-color: #FF0070;
