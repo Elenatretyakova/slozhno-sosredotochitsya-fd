@@ -3,16 +3,16 @@
   и их переопределение под различные устройства
 */
 :root {
-  --title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --subtitle-color: #FF0070;
+  --title-color: #db00ff;
+  --accent-color: #ff0070;
+  --subtitle-color: #ff0070;
   --title-text_color: #000028;
-  --text-color: #F1B2CE;
-  --decoration-color: #FF0070;
-  --button-color: #FF0070;
+  --text-color: #f1b2ce;
+  --decoration-color: #ff0070;
+  --button-color: #ff0070;
   --button-active-color: #FF007066;
   --bg-color: #000028;
-  --bg-image: url(/images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image-dark.png);
   --font-weight-bold: 700;
   --font-weight-regular: 400;
   --text-size: 18px;

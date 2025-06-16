@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   background-image: var(--bg-image);
   background-color: var(--bg-color);
   background-size: cover;
@@ -12,7 +12,8 @@
 /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 
 .header {
-  min-block-size: 100vh;
+  height: 100vh;
+  min-block-size: 668px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
@@ -33,7 +34,7 @@
 }
 
 .header__theme-menu-button {
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: var(--font-weight-regular);
   font-size: var(--text-size);
   line-height: 18px;
@@ -45,6 +46,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  border: 1px solid var(--decoration-color);
 }
 
 .header__theme-menu-button:hover {
@@ -183,19 +185,20 @@
 }
 
 .text-shadow:hover {
-  text-decoration: underline;
-  text-shadow: none;
+  border-bottom: 1px solid var(--text-color);
 }
 
 .text-shadow:focus {
   outline: none;
 }
+
 .text-shadow:focus-visible {
   border: 1px solid var(--text-color);
 }
 
 .content__picture {
   width: 100%;
+  display: block;
 }
 
 .content__section__picture {
@@ -206,7 +209,8 @@
 }
 
 .footer {
-  min-block-size: 100vh;
+  height: 100vh;
+  min-block-size: 668px;
   padding: 10px;
   display: grid;
   justify-items: center;
@@ -219,32 +223,6 @@
   line-height: var(--heading-line-height);
   color: var(--title-color);
   text-shadow: 2px 2px 0 var(--accent-color);
-}
-
-.footer__decorated-zone {
-  position: relative;
-}
-
-.footer__decorated-zone::before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  block-size: 25px;
-  inline-size: 25px;
-  border-bottom: 1px solid var(--decoration-color);
-  border-left: 1px solid var(--decoration-color);
-}
-
-.footer__decorated-zone::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  block-size: 25px;
-  inline-size: 25px;
-  border-right: 1px solid var(--decoration-color);
-  border-top: 1px solid var(--decoration-color);
 }
 
 @media (width >= 768px) {
@@ -326,15 +304,6 @@
   }
   .footer__heading {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-  .footer__decorated-zone::before {
-    left: 20px;
-    bottom: 20px;
-  }
-
-  .footer__decorated-zone::after {
-    top: 20px;
-    right: 20px;
   }
 }
 

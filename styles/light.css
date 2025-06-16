@@ -6,16 +6,13 @@
   --text-color: #353430;
   --decoration-color: #353430;
   --button-color: #353430;
-  --button-active-color: #353430;
+  --button-active-color: #32312D66;
   --bg-color: #fff1f7;
-  --bg-image: url(/images/cover-image-light.png);
+  --bg-image: url(../images/cover-image-light.png);
 }
 
-.theme-light .rec__icon::before {
-  visibility: hidden;
-}
-.theme-light .rec__icon::after {
-  visibility: hidden;
+.theme-light .rec__icon {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,8 +24,13 @@
     --text-color: #353430;
     --decoration-color: #353430;
     --button-color: #353430;
+    --button-active-color: #32312D66;
     --bg-color: #fff1f7;
-    --bg-image: url(/images/cover-image-light.png);
+    --bg-image: url(../images/cover-image-light.png);
+  }
+
+  .rec__icon {
+    display: none;
   }
 }
 
